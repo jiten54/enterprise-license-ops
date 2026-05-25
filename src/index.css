@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Overriding default Tailwind palettes to implement Elegant Dark theme elegantly and safely */
+  --color-slate-50: #0D0F12;      /* main outer system background */
+  --color-slate-100: #16191E;     /* sidebars & highlights */
+  --color-slate-150: #2D333B;     /* border lines */
+  --color-slate-200: #2D333B;     /* borders */
+  --color-slate-300: #1E293B;     /* highlights and background structures */
+  --color-slate-400: #94A3B8;     /* slate muted text */
+  --color-slate-500: #94A3B8;
+  --color-slate-700: #E1E1E6;     /* body details */
+  --color-slate-800: #F8FAFC;     /* titles and emphasis block */
+  --color-slate-900: #F8FAFC;
+
+  --color-gray-50: #111419;
+  --color-gray-100: #1E293B;      /* rules blocks and inactive states */
+  --color-gray-150: #2D333B;
+  --color-gray-200: #2D333B;
+  --color-gray-300: #2D333B;
+  --color-gray-400: #94A3B8;
+  --color-gray-500: #94A3B8;
+  --color-gray-650: #E1E1E6;
+  --color-gray-700: #E1E1E6;
+  --color-gray-850: #F8FAFC;
+  --color-gray-800: #F8FAFC;
+  --color-gray-900: #F8FAFC;
+
+  --color-white: #16191E;         /* primary container surface card color */
+  --color-indigo-50: rgba(59, 130, 246, 0.1);
+  --color-indigo-100: rgba(59, 130, 246, 0.2);
+  --color-indigo-150: rgba(59, 130, 246, 0.3);
+  --color-indigo-200: rgba(59, 130, 246, 0.35);
+  --color-indigo-500: #3B82F6;    /* main accent brand color */
+  --color-indigo-600: #3B82F6;
+  --color-indigo-650: #2563EB;
+  --color-indigo-700: #1D4ED8;
+  --color-indigo-750: #1E40AF;
+  --color-indigo-800: #3B82F6;
+  --color-indigo-905: #F8FAFC;
+  --color-indigo-900: #F8FAFC;
+
+  --color-emerald-50: rgba(16, 185, 129, 0.1);
+  --color-emerald-100: rgba(16, 185, 129, 0.2);
+  --color-emerald-500: #10B981;
+  --color-emerald-600: #10B981;
+  --color-emerald-700: #10B981;
+
+  --color-rose-50: rgba(239, 68, 68, 0.1);
+  --color-rose-100: rgba(239, 68, 68, 0.25);
+  --color-rose-500: #EF4444;
+  --color-rose-600: #EF4444;
+  --color-rose-700: #EF4444;
+  --color-rose-800: #EF4444;
+  --color-rose-900: #F8FAFC;
+
+  --color-amber-55: rgba(245, 158, 11, 0.1);
+  --color-amber-100: rgba(245, 158, 11, 0.2);
+  --color-amber-500: #F59E0B;
+  --color-amber-605: #F59E0B;
+}
+
+/* Base custom styles to ensure perfect dark-mode render compatibility */
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0D0F12 !important;
+  color: #E1E1E6 !important;
+  font-family: "Inter", "Helvetica Neue", sans-serif;
+}
+
+/* Explicit fallback mapping for hardcoded tailwind white classes */
+.bg-slate-50 {
+  background-color: #0D0F12 !important;
+}
+
+.bg-white {
+  background-color: #16191E !important;
+  border-color: #2D333B !important;
+}
+
+.border-slate-100, .border-slate-200, .border-slate-150, .border-gray-100, .border-gray-150, .border-gray-200 {
+  border-color: #2D333B !important;
+}
+
+.text-slate-900, .text-slate-800, .text-gray-900, .text-gray-800 {
+  color: #F8FAFC !important;
+}
+
+.text-slate-400, .text-slate-500, .text-gray-400, .text-gray-500 {
+  color: #94A3B8 !important;
+}
+
+/* Buttons */
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+/* Elegant custom scrollbar tracks */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D0F12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D333B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3B82F6;
+}
+
+/* Custom markdown block styling values */
+.markdown-body {
+  background-color: rgba(30, 41, 59, 0.15) !important;
+  color: #E1E1E6 !important;
+}

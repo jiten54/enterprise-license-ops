@@ -1,0 +1,8 @@
+{
+  "name": "License Usage Analytics Dashboard",
+  "description": "An AI-powered dashboard that tracks software license logs, detects inactive users, predicts license demand, generates alert notifications, and recommends renewal strategies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
